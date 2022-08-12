@@ -29,4 +29,8 @@ public class Tools {
         WebElement subscriptionSuccesful= GeneralWebDriver.driver.findElement(By.cssSelector("[class='alert alert-success alert-dismissible']"));
         Assert.assertTrue(subscriptionSuccesful.getText().toLowerCase().contains("success"));
     }
+
+    public static int randomGenerator(int max) {
+        return (int) (Math.random() * max);
+    }
 }

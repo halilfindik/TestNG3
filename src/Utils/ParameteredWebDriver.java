@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ParameteredWebDriver {
-    public static WebDriver driver;
+    public WebDriver driver;    // paralel test yapabilmek için static'i kaldırdık
     public static WebDriverWait wait;
 
     @BeforeClass

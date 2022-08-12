@@ -33,6 +33,9 @@ public class GeneralWebDriver {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
 
+        //JavascriptExecutor jse = (JavascriptExecutor) driver;
+        //jse.executeScript("window.scrollBy(0, document.documentElement.scrollHeight)");
+
         wait=new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60)); // sadece ana sayfa yüklenirken en başta
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // bütün webElement için geçerli
